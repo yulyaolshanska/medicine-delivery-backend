@@ -27,4 +27,4 @@ const DrugStoreSchema: Schema = new Schema({
   },
 });
 
-export default mongoose.model<DrugStore>("DrugStore", DrugStoreSchema);
+export default mongoose.model<DrugStore>("Drug-store", DrugStoreSchema);
