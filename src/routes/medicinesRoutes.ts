@@ -1,5 +1,5 @@
 import express from "express";
-import { getMedicinesByDrugStore } from "../controllers/medicineController";
+import { getMedicinesByDrugStore } from "../controllers/drugStoreController";
 
 const router = express.Router();
 

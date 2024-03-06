@@ -1,11 +1,11 @@
 import mongoose, { Schema, Document } from "mongoose";
-import { IDrugStore } from "./DrugStore";
+import { DrugStore } from "./DrugStore";
 
 export interface IMedicine extends Document {
   name: string;
   price: number;
   description: string;
-  drugStoreId: IDrugStore["_id"];
+  drugStoreId: string;
 }
 
 const MedicineSchema: Schema = new Schema({
@@ -14,7 +14,7 @@ const MedicineSchema: Schema = new Schema({
   description: { type: String, required: true },
   drugStoreId: {
     type: Schema.Types.ObjectId,
-    ref: "DrugStore",
+    ref: "Drug-store",
     required: true,
   },
 });

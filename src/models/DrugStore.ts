@@ -1,14 +1,5 @@
 import mongoose, { Schema, Document } from "mongoose";
 
-export interface IDrugStore extends Document {
-  name: string;
-  address: string;
-  contactInformation: {
-    phone: string;
-    email: string;
-  };
-}
-
 export interface DrugStore extends mongoose.Document {
   name: string;
   address: string;
@@ -16,6 +7,7 @@ export interface DrugStore extends mongoose.Document {
     phone: string;
     email: string;
   };
+  medicineIds: mongoose.Types.ObjectId[];
 }
 
 const DrugStoreSchema: Schema = new Schema({
@@ -25,6 +17,7 @@ const DrugStoreSchema: Schema = new Schema({
     phone: { type: String, required: true },
     email: { type: String, required: true },
   },
+  medicineIds: [{ type: Schema.Types.ObjectId, ref: "Medicine" }],
 });
 
 export default mongoose.model<DrugStore>("Drug-store", DrugStoreSchema);
