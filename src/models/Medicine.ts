@@ -6,6 +6,7 @@ export interface IMedicine extends Document {
   price: number;
   description: string;
   drugStoreId: string;
+  picture: string;
 }
 
 const MedicineSchema: Schema = new Schema({
@@ -17,6 +18,7 @@ const MedicineSchema: Schema = new Schema({
     ref: "Drug-store",
     required: true,
   },
+  picture: { type: String, required: true },
 });
 
 export default mongoose.model<IMedicine>("Medicine", MedicineSchema);
