@@ -5,6 +5,7 @@ import { connectDB } from "./server";
 require("dotenv").config();
 import drugStoresRouter from "./routes/drugStoresRoutes";
 import medicinesRouter from "./routes/medicinesRoutes";
+import orderRouter from "./routes/orderRoutes";
 
 const app = express();
 const PORT = process.env.PORT || 5001;
@@ -18,6 +19,7 @@ connectDB();
 
 app.use("/api/drugStores", drugStoresRouter);
 app.use("/api/medicines", medicinesRouter);
+app.use("/api/order", orderRouter);
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
