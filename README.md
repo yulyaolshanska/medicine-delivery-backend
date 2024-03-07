@@ -26,4 +26,6 @@ npm run start
 -   [Express] 
 -   [MongoDB]
 
-### Link to the frontend repository: [Click to view backend](https://github.com/yulyaolshanska/medicine-delivery)
+### Link to the frontend repository: [Click to view frontend](https://github.com/yulyaolshanska/medicine-delivery)
+### Link to the website: [Click to view website](https://medicine-delivery-24h.netlify.app/)
+
