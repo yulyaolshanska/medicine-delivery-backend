@@ -19,3 +19,11 @@ Start development
 ```code
 npm run start
 ```
+
+## Tech
+
+-   [Node JS] 
+-   [Express] 
+-   [MongoDB]
+
+### Link to the frontend repository: [Click to view backend](https://github.com/yulyaolshanska/medicine-delivery)
