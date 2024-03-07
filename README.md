@@ -17,5 +17,5 @@ npm install
 Start development
 
 ```code
-npm run dev
+npm run start
 ```
